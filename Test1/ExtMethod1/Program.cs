@@ -31,6 +31,15 @@ namespace ExtMethod1
         }
     }
 
+    // これがあるとコンパイルできない（どっちのAddを使ったらいいのかわからないため）
+    //static class MyExtension2
+    //{
+    //    public static double Add(this MyData d)
+    //    {
+    //        return (d._x + d._y) * 100.0;
+    //    }
+    //}
+
     class Program
     {
         static void Main(string[] args)
@@ -45,3 +54,10 @@ namespace ExtMethod1
         }
     }
 }
+
+/*
+ * ＜実行サンプル＞
+ D:\User\VCS2013\Test1\ExtMethod1\bin\Debug>ExtMethod1.exe
+ 5
+ 5
+ */
